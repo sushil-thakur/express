@@ -22,6 +22,23 @@ app.delete("/student/delete", (req, res) => {
     return res.status(200).send("Student deleted successfully");
 });
 
+//?create an api to insert course
+app.post("/course/add",(req,res)=>{
+    return res.status(200).send({messsage:"Course added successfully"});
+});
+
+app.delete("/course/delete",(req,res)=>{
+    return res.status(200).send({messsage:"Course deleted successfully"});
+});
+
+app.put("/course/update",(req,res)=>{
+    return res.status(200).send({messsage:"Course update successfully"});
+});
+
+
+app.get("/product/list",(req,res)=>{
+    return res.status(200).send({messsage:"product list successfully"});
+});
 //network port
 const port = 8000;
 
